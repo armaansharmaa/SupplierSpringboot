@@ -1,4 +1,3 @@
-Here is the updated README file reflecting the updated output structure of the POST API:
 
 ---
 
