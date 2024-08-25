@@ -18,7 +18,7 @@ This project is a proof of concept (POC) for Makersharks' search API. The API al
 ## Technologies Used
 
 - **Backend:** Spring Boot (Java)
-- **Database:** H2 (In-Memory Database for POC)
+- **Database:** H2 (In-Memory Database for POC), SQL (connectivity is also demonstrated)
 - **Validation:** Hibernate Validator
 - **Testing:** JUnit and Mockito
 - **Documentation:** Swagger (enabled)
@@ -68,7 +68,7 @@ This project is a proof of concept (POC) for Makersharks' search API. The API al
 
 ### Database
 
-The application uses an in-memory H2 database for the POC. On startup, it will auto-generate the necessary tables and populate them with sample data from `data.sql`.
+The application demonstrates connectivity with both SQL and H2 databases. For the POC, H2 is used as the default database. On startup, it will auto-generate the necessary tables and populate them with sample data from `data.sql`. The configuration for both H2 and SQL databases is shown in the `application.properties` file.
 
 To access the H2 console, go to:
 ```
@@ -79,6 +79,8 @@ Use the following credentials:
 - **JDBC URL:** `jdbc:h2:mem:testdb`
 - **Username:** `root`
 - **Password:** '0000'
+
+The `data.sql` file contains some initial test entries that will be loaded into the H2 database on startup.
 
 ## API Endpoints
 
