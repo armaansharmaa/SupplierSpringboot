@@ -56,7 +56,7 @@ This project is a proof of concept (POC) for Makersharks' search API. The API al
    ```
 
 5. **Access Swagger UI (Enabled):**
-   If Swagger is enabled, the API documentation and testing UI will be available at:
+   The API documentation and testing UI will be available at:
    ```
    http://localhost:8080/swagger-ui.html
    ```
