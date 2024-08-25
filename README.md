@@ -100,41 +100,41 @@ Use the following credentials:
 **Response Example:**
 ```json
 {
-  "totalPages": 1,
-  "totalElements": 1,
-  "size": 10,
-  "content": [
-    {
-      "supplierId": 1,
-      "companyName": "ABC Manufacturing",
-      "website": "https://abcmanufacturing.com",
-      "location": "India",
-      "natureOfBusiness": "small_scale",
-      "manufacturingProcesses": "3d_printing"
-    }
-  ],
-  "number": 0,
-  "sort": {
-    "empty": true,
-    "sorted": true,
-    "unsorted": true
-  },
-  "first": true,
-  "last": true,
-  "numberOfElements": 1,
-  "pageable": {
-    "offset": 0,
+    "totalPages": 1,
+    "totalElements": 1,
+    "size": 1,
+    "content": [
+        {
+            "supplierId": 1,
+            "companyName": "Company A",
+            "website": "http://companya.com",
+            "location": "India",
+            "natureOfBusiness": "small_scale",
+            "manufacturingProcesses": "3d_printing"
+        }
+    ],
+    "number": 0,
     "sort": {
-      "empty": true,
-      "sorted": true,
-      "unsorted": true
+        "empty": true,
+        "unsorted": true,
+        "sorted": false
     },
-    "paged": true,
-    "pageSize": 10,
-    "pageNumber": 0,
-    "unpaged": false
-  },
-  "empty": false
+    "numberOfElements": 1,
+    "pageable": {
+        "pageNumber": 0,
+        "pageSize": 1,
+        "sort": {
+            "empty": true,
+            "unsorted": true,
+            "sorted": false
+        },
+        "offset": 0,
+        "unpaged": false,
+        "paged": true
+    },
+    "first": true,
+    "last": true,
+    "empty": false
 }
 ```
 
