@@ -12,7 +12,9 @@ public class SupplierService {
     @Autowired
     private SupplierRepository supplierRepository;
 
-    public Page<Supplier> querySuppliers(String location, String natureOfBusiness, String manufacturingProcesses, Pageable pageable) {
-        return supplierRepository.findByLocationAndNatureOfBusinessAndManufacturingProcesses(location, natureOfBusiness, manufacturingProcesses, pageable);
+    public Page<Supplier> querySuppliers(String location, String natureOfBusiness, String manufacturingProcesses,
+            Pageable pageable) {
+        return supplierRepository.findByLocationAndNatureOfBusinessAndManufacturingProcesses(location, natureOfBusiness,
+                manufacturingProcesses, pageable);
     }
 }

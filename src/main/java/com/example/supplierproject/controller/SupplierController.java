@@ -24,7 +24,8 @@ public class SupplierController {
             @RequestParam int size) {
 
         Pageable pageable = PageRequest.of(page, size);
-        Page<Supplier> suppliers = supplierService.querySuppliers(location, natureOfBusiness, manufacturingProcesses, pageable);
+        Page<Supplier> suppliers = supplierService.querySuppliers(location, natureOfBusiness, manufacturingProcesses,
+                pageable);
         return ResponseEntity.ok(suppliers);
     }
 }
